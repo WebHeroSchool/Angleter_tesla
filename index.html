@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tesla</title>
+    </head>
+    <body>
+        <header class="header">
+            <img class="header__logo" src="img/Tesla-logo.png" width="166px" alt="логотип Tesla">
+            <nav class="navigation">
+                <ul class="models-menu">
+                    <li><a class="models-menu__item" href="#">Model S</a></li>
+                    <li><a class="models-menu__item" href="#">Model X</a></li>
+                    <li><a class="models-menu__item" href="#">Model 3</a></li>
+                    <li><a class="models-menu__item" href="#">Roadster</a></li>
+                    <li><a class="models-menu__item" href="#">Energy</a></li>
+                </ul>
+                <div class="users-menu">
+                    <a class="users-menu__shop" href="#">Магазин</a>
+                    <a class="users-menu__sign-in" href="#">Войти</a>
+                    <a class="users-menu__menu_burger" href="#" aria-label="Меню"></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <!-- Первый раздел-знакомство с моделью Model S -->
+
+            <section class="intro">
+                <h1 class="intro__title">Model S</h1>
+                <p class="intro__welcome-text">Добро пожаловать в будущее!</p>
+                <img class="intro__image-car" src="img/tesla-s-main.png" width="968px" alt="Model S">
+                <div class="intro__advantages-wrapper">
+                    <div class="advantage__block">
+                        <b class="advantage__figures">2,7</b>
+                        <b class="advantage__unit-of-measure">сек</b>
+                        <b class="advantage__subject">0-100 км/час</b>
+                    </div>
+                    <div class="advantage__block">
+                        <b class="advantage__figures">632</b>
+                        <b class="advantage__unit-of-measure">км</b>
+                        <b class="advantage__subject">запас хода</b>
+                    </div>
+                </div>
+                <div class="order-block intro__order">
+                    <a class="know-more intro__test-drive">тест-драйв</a>
+                    <button class="order-button intro__button_red" type="button">заказать</button>
+                </div>
+                <a class="next-section" aria-label="следующий раздел"></a>
+            </section>
+
+            <!-- Второй раздел- функциональное описание модели S -->
+            
+            <section class="description">
+                <h2 class="description__title">Model S</h2>
+                <img class="description__image-car" src="img/tesla-model-s-cockpit.png" width="1548px" alt="Inside of the car">
+                 <div class="description__main-wrapper">   
+                    <div class="text-wrapper description__text-wrapper">
+                        <h3 class="text-title">Будущее вождения</h3>
+                        <p class="text">
+                            Модель S обладает лучшей в своем классе вместимостью: 
+                            в машине поместится до пяти взрослых и двух детей. 
+                            Оснащена современным 17-дюймовым сенсорным экраном. 
+                            Усовершенствованная шумовая инженерия создает динамику звука, 
+                            сравнимую со студией звукозаписи, а стеклянная крыша 
+                            обеспечивает просторный интерьер для каждого пассажира.
+                        </p>
+                    </div>
+                    <div class="description__advantages-wrapper">
+                        <div class="advantage__block">
+                                <b class="advantage__figures">17</b>
+                                <b class="advantage__unit-of-measure">дюймов</b>
+                                <b class="advantage__about-subject">Большой дисплей</b>
+                        </div>
+                        <div class="advantage__block">
+                            <b class="advantage__unit-of-measure">Беспроводное обновление ПО</b>
+                            <b class="advantage__about-subject">Повышенная функциональность</b>
+                        </div>
+                        <div class="advantage__block">
+                                <b class="advantage__figures">894</b>
+                                <b class="advantage__unit-of-measure">литра</b>
+                                <b class="advantage__about-subject">Объем грузового пространства</b>
+                        </div>
+                    </div>
+                    <div class="order-block description__order">
+                        <a class="know-more description__know-more">узнать больше</a>
+                        <button class="order-button order-button_white intro__button" type="button">заказать</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Третий раздел- безопасность модели S -->
+            
+
+            <section class="safety">
+                <div class="text-wrapper safety__text-wrapper">
+                    <h3 class="text-title">Самый безопасный автомобиль в мире</h3>
+                    <p class="text">
+                        Модель S достигла наивысшей оценки безопасности любого автомобиля, 
+                        когда-либо испытанного, и установила рекорд по наименьшей вероятности 
+                        травмы пассажиров - от несчастных случаев на переднем, боковом, 
+                        заднем сидении и в ДТП с переворотом авто.                    
+                    </p>
+                </div>
+                <div class="text-wrapper safety__raiting">
+                        <h3 class="text-title">Оценка защиты:</h3>
+                        <ul class="safety__raiting-list">
+                            <li class="safety__raiting-item item-front">спереди</li>
+                            <li class="safety__raiting-item item-aside">сбоку</li>
+                            <li class="safety__raiting-item item-aside-stand">сбоку <sub>стойка</sub></li>
+                            <li class="safety__raiting-item item-driver">водитель</li>
+                            <li class="safety__raiting-item item-passenger">пассажир</li>
+                        </ul>
+                    </div>
+                    <div class="safety__whole-raiting">
+                        <b class="safety__whole-raiting-title">5 звезд</b>
+                        <span class="safety__whole-raiting-text">безопасности</span>
+                    </div>
+                    <div class="order-block safety__order">
+                        <a class="know-more safety__know-more">узнать больше</a>
+                        <button class="order-button order-button_white safety__button" type="button">заказать</button>
+                    </div>
+                    <div class="safety__car-frame-image">
+                        <img class="safety__car-frame-image" src="img/Car frame.png" width="1049px" alt="Car frame">  
+                        <b class="safety__car-frame-text front-blow">Защита от удара спереди</b>
+                        <b class="safety__car-frame-text aside-blow">Защита от удара сбоку </b>
+                        <b class="safety__car-frame-text turn-over">Минимальный риск перевернуться в аварии</b>
+                    </div>
+                </section>
+        </main>
+        <footer class="footer">
+            <address class="copyright">
+                <span class="copyright__developed-by">разработано в</span>
+                <b class="copyright__WebHero">WebHero</b>
+                <span class="copyright__school">School</span>
+            </address>
+        </footer>
+    </body>
+</html>
