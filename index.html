@@ -7,19 +7,17 @@
     <body>
         <header class="header">
             <img class="logo header__logo" src="img/Tesla-logo.png" width="166px" alt="логотип Tesla">
-            <nav class="navigation header__navigation">
-                <ul class="models-menu">
-                    <li><a class="models-menu__item item-link" href="#">Model S</a></li>
-                    <li><a class="models-menu__item item-link" href="#">Model X</a></li>
-                    <li><a class="models-menu__item item-link" href="#">Model 3</a></li>
-                    <li><a class="models-menu__item item-link" href="#">Roadster</a></li>
-                    <li><a class="models-menu__item item-link" href="#">Energy</a></li>
-                </ul>
-                <ul class="users-menu">
-                    <li><a class="users-menu__item" href="#">Магазин</a></li>
-                    <li><a class="users-menu__item" href="#">Войти</a></li>
-                    <li><a class="users-menu__menu-burger" href="#" aria-label="Меню"></a></li>
-                </ul>
+            <nav class="models-menu">
+                <a class="models-menu__item item-link" href="#">Model S</a>
+                <a class="models-menu__item item-link" href="#">Model X</a>
+                <a class="models-menu__item item-link" href="#">Model 3</a>
+                <a class="models-menu__item item-link" href="#">Roadster</a>
+                <a class="models-menu__item item-link" href="#">Energy</a>
+            </nav>
+            <nav class="users-menu">
+                <a class="users-menu__item" href="#">Магазин</a>
+                <a class="users-menu__item" href="#">Войти</a>
+                <a class="users-menu__menu-burger" href="#" aria-label="Меню"></a>
             </nav>
         </header>
         <main>
@@ -30,18 +28,18 @@
                 <h1 class="intro__title">Model S</h1>
                 <p class="intro__welcome-text">Добро пожаловать в будущее!</p>
                 <img class="intro__image-car" src="img/tesla-s-main.png" width="968px" alt="Model S">
-                <ul class="intro__advantage-list">
-                    <li class="advantage intro__advantage">
+                <div class="intro__advantage-wrapper">
+                    <div class="advantage intro__advantage-item">
                         <b class="advantage__figures">2,7</b>
                         <b class="advantage__unit-of-measure">сек</b>
                         <b class="advantage__subject">0-100 км/час</b>
-                    </li>
-                    <li class="advantage intro__advantage">
+                    </div>
+                    <div class="advantage intro__advantage-item">
                         <b class="advantage__figures">632</b>
                         <b class="advantage__unit-of-measure">км</b>
                         <b class="advantage__subject">запас хода</b>
-                    </li>
-                </ul>
+                    </div>
+                </div>
                 <div class="order intro__order">
                     <a class="order__test-drive">тест-драйв</a>
                     <button class="order__button order__button_color_red" type="button">заказать</button>
@@ -66,22 +64,22 @@
                             обеспечивает просторный интерьер для каждого пассажира.
                         </p>
                     </div>
-                    <ul class="description__advantage-list">
-                        <li class="advantage description__advantage">
+                    <div class="description__advantage-wrapper">
+                        <div class="advantage description__advantage-item">
                             <b class="advantage__figures">17</b>
                             <b class="advantage__unit-of-measure">дюймов</b>
                             <b class="advantage__about-subject">Большой дисплей</b>
-                        </li>
-                        <li class="advantage description__advantage">
+                        </div>
+                        <div class="advantage description__advantage-item">
                             <b class="advantage__unit-of-measure">Беспроводное обновление ПО</b>
                             <b class="advantage__about-subject">Повышенная функциональность</b>
-                        </li>
-                        <li class="advantage description__advantage">
+                        </div>
+                        <div class="advantage description__advantage-item">
                             <b class="advantage__figures">894</b>
                             <b class="advantage__unit-of-measure">литра</b>
                             <b class="advantage__about-subject">Объем грузового пространства</b>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                     <div class="order description__order">
                         <a class="order__know-more">узнать больше</a>
                         <button class="order__button order__button_color_white" type="button">заказать</button>
