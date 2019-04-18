@@ -1,3 +1,246 @@
+/* Глобальные и общие стили */
+
 body {
-    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Стили хедера */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 60px 0 43px;
+    margin-top: 2px;
+}
+
+.header__logo {
+    margin-right: 80px;
+}
+
+.models-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.models-menu__item-wrapper {
+    position: relative;
+}
+
+.models-menu__item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: normal;
+    color: #000000;
+    margin-right: 44px;
+}
+
+.item-link:hover,
+.item-link:active {
+    color: #E51937;
+}
+
+.item-link:hover::after,
+.item-link:active::after {
+    content: "";
+  
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    
+    width: 60px;
+    height: 2px;
+    
+    background-image: url("img/underline.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+}
+
+.users-menu {
+    padding-top: 16px;
+}
+
+.users-menu__item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: normal;
+    color: #000000;
+    margin-right: 25px;
+}
+
+.users-menu__menu-image {
+margin-top: 1px;
+}
+
+/* Первый раздел-знакомство с моделью Model S */
+
+.intro__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 1;
+    color: #000000;
+    text-align: center;
+    margin-top: 68px;
+    margin-bottom: 0;
+}
+
+.intro__welcome-text {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 27px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: normal;
+    color: #000000;
+    letter-spacing: 0.5;
+}
+
+.intro__image-car-wrapper {
+    display: flex;
+    justify-content: center;
+    min-width: 968px;
+    background-image: url("img/Tesla-Wordmark-Red.png");
+    background-repeat: no-repeat;
+    background-position-y: -145px;
+    margin-bottom: 30px;
+}
+.intro__image-car {
+    width: 968px;
+    height: 450px;
+}
+
+.intro__order-advantage-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 321px 0 323px;
+}
+
+/* Блок advantage */
+
+.intro__advantage-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    min-width: 315px;
+    padding-left: 55px;
+    margin-right: 134px;
+}
+
+.advantage {
+    position: relative;  
+}
+
+.advantage__figures {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1;
+    color: #000000;
+    margin-right: 2px;
+}
+
+.advantage__unit-of-measure {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: normal;
+    color: #000000;
+}
+
+.advantage__subject {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.advantage__figures_type_speed::before {
+    content: "";
+  
+    position: absolute;
+    top: 7px;
+    left: -60px;
+    
+    width: 46px;
+    height: 35px;
+    
+    background-image: url("img/Speed.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.advantage__figures_type_road::before {
+    content: "";
+  
+    position: absolute;
+    top: 3px;
+    left: -42px;
+    
+    width: 31px;
+    height: 50px;
+    
+    background-image: url("img/Road_icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+/* Блок order */
+
+.order {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 290px;
+}
+
+.order__test-drive {
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.order__test-drive::before {
+    content: "";
+  
+    position: absolute;
+    top: 15px;
+    left: -30px;
+    
+    width: 46px;
+    height: 35px;
+    
+    background-image: url("img/steering-wheel.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.order__button {
+    width: 160px;
+    height: 40px;
+
+    border: 2px solid #E51937;
+    box-sizing: border-box;
+
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #E51937;
 }
