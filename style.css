@@ -257,6 +257,7 @@ display: none;
 .next-section_wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: 37px;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -382,4 +383,47 @@ display: none;
     background-color: #E51937;
     padding-right: 11px;
 }
+}
+
+/* Второй раздел- функциональное описание модели S  */
+
+.description {
+    position: relative;
+}
+.description__image-car{
+    position: absolute;
+}
+
+.description__title {
+font-weight: 600;
+font-size: 70px;
+color: #E51937;
+}
+
+.description__main-wrapper {
+    position: absolute;
+}
+
+.text-title {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.white-text {
+    color: #ffffff;
+    background-color: #E51937; 
+}
+
+.order__know-more::before {
+
+}
+
+.order__button_color_white {
+    border-color: #ffffff;
+
 }
