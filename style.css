@@ -11,8 +11,9 @@ a {
 }
 
 .container {
-    min-width: 1440px;
-    margin: 0;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #ffffff;
     box-sizing: border-box;
 }
@@ -87,11 +88,16 @@ a {
 margin-top: 1px;
 }
 
-.users-menu__menu-burger_size_mobile {
+.users-menu__menu-burger_size_mobile,
+.users-menu__menu-burger_size_ipad {
 display: none;
 }
 
 /* Первый раздел-знакомство с моделью Model S */
+
+.intro {
+    position: relative;
+}
 
 .intro__title {
     font-style: normal;
@@ -115,24 +121,38 @@ display: none;
     letter-spacing: 0.5;
 }
 
+.intro__image-tesla-logo {
+    position: absolute;
+    top: -10px;
+    max-width: 100%;
+    width: 1514px;
+}
+
 .intro__image-car-wrapper {
     display: flex;
     justify-content: center;
-    min-width: 968px;
-    background-image: url("img/Tesla-Wordmark-Red.png");
-    background-repeat: no-repeat;
-    background-position-y: -145px;
-    margin-bottom: 30px;
+    align-items: top;
+    width: 100%;
+    max-width: 968px;
+    margin: 0 auto 30px;
+    
 }
+
 .intro__image-car {
-    width: 968px;
-    height: 450px;
+    z-index: 1;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
 }
 
 .intro__order-advantage-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 0 321px 0 323px;
+    flex-wrap: wrap;
+    max-width: 798px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px; 
 }
 
 /* Блок advantage */
@@ -210,8 +230,8 @@ display: none;
     justify-content: space-between;
     align-items: center;
     min-width: 290px;
-    margin-bottom: 45px;
-    margin-top: 8px;
+    margin-bottom: 41px;
+    margin-top: 7px;
 }
 
 .order__test-drive {
@@ -255,9 +275,152 @@ display: none;
 .next-section_wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: 37px;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (min-width: 795px) and (max-width: 1080px) {
+    
+    .header__logo {
+        margin: 0;
+    }
+
+    .users-menu__menu-burger_size_ipad {
+        display: inline-block;
+        width: 24px;
+        height: 15px;
+        margin-top: 14px;
+        margin-right: 10px;
+    }
+
+    .users-menu,
+    .models-menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 794px) {
+    
+    .container {
+        max-width: 768px;
+        min-width: 376px;
+    }
+
+    .header {
+        padding: 20px 30px 0px 16px;
+    }
+
+    .users-menu__menu-burger_size_ipad {
+        display: inline-block;
+        width: 24px;
+        height: 15px;
+        margin-top: 14px;
+        margin-right: 10px;
+    }
+
+    .users-menu,
+    .models-menu {
+        display: none;
+    }
+
+    .intro__title {
+        font-size: 90px;
+        margin-top: 90px;
+    }
+
+    .intro__welcome-text {
+        font-size: 15px;
+    }
+
+    .intro__image-tesla-logo {
+        position: absolute;
+        top: 90px;
+        left: -30px;
+        width: 820px;
+    }
+    .intro__image-car-wrapper {
+        margin-top: 95px;
+        margin-bottom: 40px;
+        max-width: 700px;
+    }
+
+    .intro__order-advantage-wrapper {
+        max-width: 587px;
+        display: block;
+        margin: 0;
+        padding-left: 174px;
+        padding-top: 0px;
+    }
+
+    /* Блок advantage. tablet size */
+
+    .intro__advantage-wrapper {
+        min-width: 230px;
+        margin-bottom: 60px;
+        margin-right: 155px;
+    }
+
+    .advantage__figures {
+        font-size: 50px;
+        margin-right: 2px;
+    }
+
+    .advantage__unit-of-measure {
+        font-size: 20px;
+    }
+
+    .advantage__subject {
+
+        font-size: 12px;
+    }
+
+    .advantage__figures_type_speed::before {
+        top: 10px;
+        left: -84px;  
+        width: 66px;
+        height: 60px;
+        background-size: 66px;
+    }
+
+    .advantage__figures_type_road::before {
+        top: 4px;
+        left: -50px;
+        width: 60px;
+        height: 100px;
+        background-size: 41px;
+    }
+
+        /* Блок order. tablet size */
+
+        .order {
+            max-width: 374px;
+            margin-left: 48px;
+            margin-bottom: 58px;
+        }
+    
+        .order__test-drive {
+            color: #E51937;
+            font-size: 16px;
+    
+        }
+    
+        .order__test-drive::before {
+            top: 8px;
+            left: -50px;
+            background-image: url("img/steering-wheel-red.png");
+            background-size: 30px;
+        }
+    
+        .order__button {
+            color: #ffffff;
+            font-size: 16px;
+            background-color: #E51937;
+            padding-right: 11px;
+            width: 220px;
+            height: 55px;
+        }
+    
+}
+@media only screen and (max-width: 480px) {
 
     .container {
         max-width: 375px;
@@ -298,11 +461,16 @@ display: none;
         font-size: 10px;
         margin-bottom: 49px;
     }
+
+    .intro__image-tesla-logo {
+        position: absolute;
+        top: 74px;
+        left: -36px;
+        max-width: 430px;
+    }
+
     .intro__image-car-wrapper {
         min-width: 357px;
-        background-size: 430px;
-        background-position-y: -42px;
-        background-position-x: -32px;
         margin-bottom: 30px;
     }
 
@@ -314,70 +482,113 @@ display: none;
     .intro__order-advantage-wrapper {
         width: 375px;
         display: block;
-        /* flex-wrap: wrap; */
         margin: 0;
-        padding-left: 37px;
+        padding-left: 40px;
         padding-top: 0px;
     }
 
-/* Блок advantage */
+    /* Блок advantage. mobile size */
 
-.intro__advantage-wrapper {
-    min-width: 230px;
-    margin-bottom: 39px;
+    .intro__advantage-wrapper {
+        min-width: 230px;
+        margin-bottom: 39px;
+    }
+
+    .advantage__figures {
+        font-size: 27px;
+        margin-right: 2px;
+    }
+
+    .advantage__unit-of-measure {
+        font-size: 15px;
+    }
+
+    .advantage__subject {
+        font-size: 10px;
+    }
+
+    .advantage__figures_type_speed::before {
+        top: 2px;
+        left: -50px;  
+        width: 38px;
+        height: 28px;
+        background-size: 38px;
+    }
+
+    .advantage__figures_type_road::before {
+        top: -3px;
+        left: -37px;
+        width: 26px;
+        height: 41px;
+        background-size: 26px;
+    }
+
+    /* Блок order. mobile size */
+
+    .order {
+
+        min-width: 100px;
+        max-width: 275px;
+        margin-left: 27px;
+        margin-bottom: 33px;
+    }
+
+    .order__test-drive {
+        color: #E51937;
+    }
+
+    .order__test-drive::before {
+        top: 8px;
+        background-image: url("img/steering-wheel-red.png");
+    }
+
+    .order__button {
+        color: #ffffff;
+        background-color: #E51937;
+        padding-right: 11px;
+    }
 }
 
-.advantage__figures {
-    font-size: 27px;
-    margin-right: 2px;
+/* Второй раздел- функциональное описание модели S  */
+
+.description {
+    position: relative;
+}
+.description__image-car{
+    position: absolute;
 }
 
-.advantage__unit-of-measure {
+.description__title {
+font-weight: 600;
+font-size: 70px;
+color: #E51937;
+}
+
+.description__main-wrapper {
+    position: absolute;
+
+}
+
+.text-title {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.text {
+    font-weight: 500;
     font-size: 15px;
 }
 
-.advantage__subject {
-    font-size: 10px;
-}
-
-.advantage__figures_type_speed::before {
-    top: 2px;
-    left: -50px;  
-    width: 38px;
-    height: 28px;
-    background-size: 38px;
-}
-
-.advantage__figures_type_road::before {
-    top: -3px;
-    left: -37px;
-    width: 26px;
-    height: 41px;
-    background-size: 26px;
-}
-/* Блок order */
-
-.order {
-
-    min-width: 100px;
-    max-width: 275px;
-    margin-left: 27px;
-    margin-bottom: 33px;
-}
-
-.order__test-drive {
-    color: #E51937;
-
-}
-
-.order__test-drive::before {
-    top: 8px;
-    background-image: url("img/steering-wheel-red.png");
-}
-
-.order__button {
+.white-text {
     color: #ffffff;
-    background-color: #E51937;
-    padding-right: 11px;
+    background-color: #E51937; 
 }
+
+.order__know-more::before {
+
+}
+
+.order__button_color_white {
+    border-color: #ffffff;
+
 }
