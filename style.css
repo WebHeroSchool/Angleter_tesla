@@ -189,7 +189,8 @@ display: none;
     display: block;
     font-weight: normal;
     font-size: 12px;
-    line-height: 1.6;
+    /* line-height: 1.6; */
+    line-height: 15px;
     color: #000000;
 }
 
@@ -554,24 +555,35 @@ display: none;
 .description {
     position: relative;
 }
-.description__image-car{
+.description__image-car {
     position: absolute;
 }
 
 .description__title {
-font-weight: 600;
-font-size: 70px;
-color: #E51937;
+    font-weight: 600;
+    font-size: 70px;
+    color: #E51937;
 }
 
 .description__main-wrapper {
     position: absolute;
+    right: 0px;
+    width: 388px;
+    min-height: 900px;
+    background-color: #E51937;
+    padding-left: 52px;
+    padding-top: 51px;
+}
 
+.about-car__text {
+    width: 316px;
+    margin-bottom: 54px;
 }
 
 .text-title {
     font-weight: 600;
     font-size: 30px;
+    margin-bottom: 11px;
 }
 
 .text {
@@ -584,11 +596,89 @@ color: #E51937;
     background-color: #E51937; 
 }
 
-.order__know-more::before {
+.description__advantage-wrapper {
+width: 190px;
+min-height: 267px;
+margin-left: 55px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
 
+.advantage__figures_type_screen::before {
+    content: "";
+  
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    
+    width:36px;
+    height: 53px;
+    
+    background-image: url("img/screen.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.advantage__unit-of-measure_type_wifi::before {
+    content: "";
+  
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    
+    width:44px;
+    height: 34px;
+    
+    background-image: url("img/wifi.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.advantage__figures_type_battery::before {
+    content: "";
+  
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    
+    width:36px;
+    height: 52px;
+    
+    background-image: url("img/battery.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.description__order {
+    position: absolute;
+    min-width: 320px;
+    bottom: 63px;
+    right: 44px;
+    margin: 0px;
+}
+
+.order__know-more {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.order__know-more::before {
+    content: "";
+  
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    
+    width:22px;
+    height: 22px;
+    
+    background-image: url("img/info.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .order__button_color_white {
     border-color: #ffffff;
-
 }
