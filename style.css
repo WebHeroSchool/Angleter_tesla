@@ -91,10 +91,15 @@ a {
 .users-menu__menu-image {
 margin-top: 1px;
 }
+.button_burger {
+    border: none;
+    background-color: #ffffff;
+}
+
 
 .users-menu__menu-burger_size_mobile,
 .users-menu__menu-burger_size_ipad {
-display: none;
+    display: none;
 }
 
 /* Первый раздел-знакомство с моделью Model S */
