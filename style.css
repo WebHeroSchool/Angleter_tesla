@@ -162,7 +162,7 @@ display: none;
     justify-content: space-between; 
     min-width: 315px;
     padding-left: 55px;
-    margin-right: 134px;
+    /* Padding используется для создания места для псевдоэлемента */
 }
 
 .advantage {
@@ -345,19 +345,17 @@ display: none;
     }
 
     .intro__order-advantage-wrapper {
-        max-width: 587px;
+        max-width: 440px;
         display: block;
-        margin: 0;
-        padding-left: 174px;
-        padding-top: 0px;
+        margin: 0 auto;
     }
 
     /* Блок advantage. tablet size */
 
     .intro__advantage-wrapper {
         min-width: 230px;
-        margin-bottom: 60px;
-        margin-right: 155px;
+        max-width: 390px;
+        margin-bottom: 65px;
     }
 
     .advantage__figures {
@@ -384,7 +382,7 @@ display: none;
 
     .advantage__figures_type_road::before {
         top: 4px;
-        left: -50px;
+        left: -55px;
         width: 60px;
         height: 100px;
         background-size: 41px;
@@ -395,6 +393,7 @@ display: none;
         .order {
             max-width: 374px;
             margin-left: 48px;
+            /* margin-left используется для создания места для псевдоэлемента */
             margin-bottom: 58px;
         }
     
@@ -481,17 +480,17 @@ display: none;
     }
 
     .intro__order-advantage-wrapper {
-        width: 375px;
+        width: 295px;
         display: block;
-        margin: 0;
-        padding-left: 40px;
-        padding-top: 0px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     /* Блок advantage. mobile size */
 
     .intro__advantage-wrapper {
-        min-width: 230px;
+        min-width: 220px;
+        max-width: 225px;
         margin-bottom: 39px;
     }
 
@@ -531,6 +530,8 @@ display: none;
         min-width: 100px;
         max-width: 275px;
         margin-left: 27px;
+        /* margin-left используется для создания места для псевдоэлемента */
+
         margin-bottom: 33px;
     }
 
