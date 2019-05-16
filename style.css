@@ -69,11 +69,15 @@ a {
     background-image: url("img/underline.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    
 }
 
 .users-menu {
     padding-top: 16px;
+}
+
+.users-menu__item-wrapper {
+    position: relative;
+    display: inline;
 }
 
 .users-menu__item {
