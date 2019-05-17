@@ -290,7 +290,7 @@ margin-top: 1px;
     margin-bottom: 37px;
 }
 
-@media only screen and (min-width: 795px) and (max-width: 1080px) {
+@media only screen and (min-width: 810px) and (max-width: 1100px) {
     
     .header__logo {
         margin: 0;
@@ -310,11 +310,11 @@ margin-top: 1px;
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 794px) {
+@media only screen and (min-width: 481px) and (max-width: 809px) {
     
     .container {
         max-width: 768px;
-        min-width: 376px;
+        min-width: 481px;
     }
 
     .header {
@@ -413,7 +413,7 @@ margin-top: 1px;
         }
     
         .order__test-drive::before {
-            top: 8px;
+            top: 12px;
             left: -50px;
             background-image: url("img/steering-wheel-red.png");
             background-size: 30px;
@@ -429,7 +429,122 @@ margin-top: 1px;
         }
     
 }
-@media only screen and (max-width: 480px) {
+
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+    
+    .container {
+        max-width: 480px;
+        min-width: 376px;
+    }
+
+    .header {
+        padding: 20px 30px 0px 16px;
+    }
+
+    .users-menu__menu-burger_size_ipad {
+        display: inline-block;
+        width: 24px;
+        height: 15px;
+        margin-top: 14px;
+        margin-right: 14px;
+    }
+
+    .users-menu,
+    .models-menu {
+        display: none;
+    }
+
+    .intro__title {
+        font-size: 90px;
+        margin-top: 90px;
+    }
+
+    .intro__welcome-text {
+        font-size: 15px;
+    }
+
+    .intro__image-tesla-logo {
+        position: absolute;
+        top: 190px;
+    }
+    .intro__image-car-wrapper {
+        margin-top: 95px;
+        margin-bottom: 40px;
+        max-width: 700px;
+    }
+    .intro__order-advantage-wrapper {
+        width: 295px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Блок advantage. mobile size */
+
+    .intro__advantage-wrapper {
+        min-width: 220px;
+        max-width: 225px;
+        margin-bottom: 39px;
+    }
+
+    .advantage__figures {
+        font-size: 27px;
+        margin-right: 2px;
+    }
+
+    .advantage__unit-of-measure {
+        font-size: 15px;
+    }
+
+    .advantage__subject {
+        font-size: 10px;
+    }
+
+    .advantage__figures_type_speed::before {
+        top: 2px;
+        left: -50px;  
+        width: 38px;
+        height: 28px;
+        background-size: 38px;
+    }
+
+    .advantage__figures_type_road::before {
+        top: -3px;
+        left: -37px;
+        width: 26px;
+        height: 41px;
+        background-size: 26px;
+    }
+
+    /* Блок order. mobile size */
+
+    .order {
+
+        min-width: 100px;
+        max-width: 275px;
+        margin-left: 27px;
+        /* margin-left используется для создания места для псевдоэлемента */
+
+        margin-bottom: 33px;
+    }
+
+    .order__test-drive {
+        color: #E51937;
+    }
+
+    .order__test-drive::before {
+        top: 8px;
+        background-image: url("img/steering-wheel-red.png");
+    }
+
+    .order__button {
+        color: #ffffff;
+        background-color: #E51937;
+        padding-right: 11px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
 
     .container {
         max-width: 375px;
