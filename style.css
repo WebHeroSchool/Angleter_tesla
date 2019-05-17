@@ -94,6 +94,7 @@ margin-top: 1px;
 .button_burger {
     border: none;
     background-color: #ffffff;
+    outline: none;
 }
 
 
@@ -106,6 +107,7 @@ margin-top: 1px;
 
 .intro {
     position: relative;
+    overflow: hidden;
 }
 
 .intro__title {
@@ -132,7 +134,7 @@ margin-top: 1px;
 
 .intro__image-tesla-logo {
     position: absolute;
-    top: -10px;
+    top: 55px;
     max-width: 100%;
     width: 1514px;
 }
@@ -324,7 +326,7 @@ margin-top: 1px;
         width: 24px;
         height: 15px;
         margin-top: 14px;
-        margin-right: 10px;
+        margin-right: 14px;
     }
 
     .users-menu,
@@ -343,9 +345,7 @@ margin-top: 1px;
 
     .intro__image-tesla-logo {
         position: absolute;
-        top: 90px;
-        left: -30px;
-        width: 820px;
+        top: 190px;
     }
     .intro__image-car-wrapper {
         margin-top: 95px;
@@ -452,7 +452,7 @@ margin-top: 1px;
         width: 24px;
         height: 15px;
         margin-top: 14px;
-        margin-right: 21px;
+        margin-right: 28px;
     }
 
     .users-menu,
@@ -473,8 +473,8 @@ margin-top: 1px;
 
     .intro__image-tesla-logo {
         position: absolute;
-        top: 74px;
-        left: -36px;
+        top: 105px;
+        left: -30px;
         max-width: 430px;
     }
 
