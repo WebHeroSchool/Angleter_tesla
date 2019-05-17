@@ -192,7 +192,7 @@ margin-top: 1px;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    line-height: normal;
+    line-height: 18px;
     color: #000000;
 }
 
@@ -694,26 +694,31 @@ margin-top: 1px;
     position: absolute;
     right: 0px;
     width: 388px;
-    min-height: 900px;
+    min-height: 849px;
     background-color: #E51937;
     padding-left: 52px;
     padding-top: 51px;
 }
 
+.description__about-car {
+}
+
 .about-car__text {
     width: 316px;
-    margin-bottom: 54px;
+    margin-bottom: 60px;
 }
 
 .text-title {
     font-weight: 600;
     font-size: 30px;
     margin-bottom: 11px;
+    margin-top: 0px;
 }
 
 .text {
     font-weight: 500;
     font-size: 15px;
+    line-height: 18px;
 }
 
 .white-text {
@@ -723,7 +728,7 @@ margin-top: 1px;
 
 .description__advantage-wrapper {
 width: 190px;
-min-height: 267px;
+min-height: 264px;
 margin-left: 55px;
 display: flex;
 flex-direction: column;
@@ -735,7 +740,7 @@ justify-content: space-between;
   
     position: absolute;
     top: 10px;
-    left: -50px;
+    left: -55px;
     
     width:36px;
     height: 53px;
@@ -749,8 +754,8 @@ justify-content: space-between;
     content: "";
   
     position: absolute;
-    top: 10px;
-    left: -50px;
+    top: 25px;
+    left: -60px;
     
     width:44px;
     height: 34px;
@@ -764,8 +769,8 @@ justify-content: space-between;
     content: "";
   
     position: absolute;
-    top: 0px;
-    left: -50px;
+    top: 7px;
+    left: -55px;
     
     width:36px;
     height: 52px;
