@@ -2,25 +2,29 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Tesla</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="fonts/fonts.css">
     </head>
-    <body>
+    <body class="container">
         <header class="header">
             <img class="logo header__logo" src="img/Tesla-logo.png" width="166px" alt="логотип Tesla">
             <nav class="models-menu">
-                <a class="models-menu__item item-link" href="#">Model S</a>
-                <a class="models-menu__item item-link" href="#">Model X</a>
-                <a class="models-menu__item item-link" href="#">Model 3</a>
-                <a class="models-menu__item item-link" href="#">Roadster</a>
-                <a class="models-menu__item item-link" href="#">Energy</a>
+                <div class="models-menu__item-wrapper"><a class="models-menu__item item-link active" href="#">Model S</a></div>
+                <div class="models-menu__item-wrapper"><a class="models-menu__item item-link" href="#">Model X</a></div>
+                <div class="models-menu__item-wrapper"><a class="models-menu__item item-link" href="#">Model 3</a></div>
+                <div class="models-menu__item-wrapper"><a class="models-menu__item item-link" href="#">Roadster</a></div>
+                <div class="models-menu__item-wrapper"><a class="models-menu__item item-link" href="#">Energy</a></div>
             </nav>
             <nav class="users-menu">
-                <a class="users-menu__item" href="#">Магазин</a>
-                <a class="users-menu__item" href="#">Войти</a>
-                <a class="users-menu__menu-burger" href="#" aria-label="Меню"></a>
+                <div class="users-menu__item-wrapper"><a class="users-menu__item item-link" href="#">Магазин</a></div>
+                <div class="users-menu__item-wrapper"><a class="users-menu__item item-link" href="#">Войти</a></div>
+                <button class="users-menu__menu-burger button_burger" type="button" aria-label="Меню"><img class="users-menu__menu-image" src="img/burger.svg" alt="menu"></button>
             </nav>
+            <button class="users-menu__menu-burger users-menu__menu-burger_size_mobile button_burger" aria-label="Меню"><img class="users-menu__menu-image" src="img/burger.svg" alt="menu"></button>
+            <button class="users-menu__menu-burger users-menu__menu-burger_size_ipad button_burger" aria-label="Меню"><img class="users-menu__menu-image" src="img/burger_ipad.svg" alt="menu"></button>
         </header>
         <main>
 
@@ -29,38 +33,42 @@
             <section class="intro">
                 <h1 class="intro__title">Model S</h1>
                 <p class="intro__welcome-text">Добро пожаловать в будущее!</p>
-                <img class="intro__image-car" src="img/tesla-s-main.png" width="968px" alt="Model S">
-                <div class="intro__advantage-wrapper">
-                    <div class="advantage intro__advantage-item">
-                        <b class="advantage__figures">2,7</b>
-                        <b class="advantage__unit-of-measure">сек</b>
-                        <b class="advantage__subject">0-100 км/час</b>
-                    </div>
-                    <div class="advantage intro__advantage-item">
-                        <b class="advantage__figures">632</b>
-                        <b class="advantage__unit-of-measure">км</b>
-                        <b class="advantage__subject">запас хода</b>
-                    </div>
+                <img class="intro__image-tesla-logo" src="img/Tesla-Wordmark-Red.png" alt="">  
+                <div class="intro__image-car-wrapper">
+                    <img class="intro__image-car" src="img/tesla-s-main.png" alt="Model S">
                 </div>
-                <div class="order intro__order">
-                    <a class="order__test-drive">тест-драйв</a>
-                    <button class="order__button order__button_color_red" type="button">заказать</button>
-                </div>
-                <a class="next-section" aria-label="следующий раздел" href="#"></a>
+                <div class="intro__order-advantage-wrapper">
+                    <div class="intro__advantage-wrapper">
+                        <div class="advantage intro__advantage-item">
+                            <b class="advantage__figures advantage__figures_type_speed">2,7</b>
+                            <b class="advantage__unit-of-measure">сек</b>
+                            <b class="advantage__subject">0-100 км/час</b>
+                        </div>
+                        <div class="advantage intro__advantage-item">
+                            <b class="advantage__figures advantage__figures_type_road">632</b>
+                            <b class="advantage__unit-of-measure">км</b>
+                            <b class="advantage__subject">запас хода</b>
+                        </div>
+                    </div>
+                    <div class="order intro__order">
+                        <a class="order__test-drive">тест драйв</a>
+                        <button class="order__button order__button_color_red" type="button">заказать</button>
+                    </div>
             </section>
 
+            <div class="next-section_wrapper"><a class="next-section" aria-label="следующий раздел" href="#"><img class="next-section_image" src="img/next.png" width="35px"></a></div>
+            
             <!-- Второй раздел- функциональное описание модели S -->
             
             <section class="description">
                 <h2 class="description__title">Model S</h2>
-                <img class="description__image-car" src="img/tesla-model-s-cockpit.png" width="1548px" alt="Inside of the car">
                 <div class="description__main-wrapper">   
                     <div class="about-car description__about-car">
-                        <h3 class="about-car__title title">Будущее вождения</h3>
-                        <p class="about-car__text text">
+                        <h3 class="about-car__title text-title white-text">Будущее вождения</h3>
+                        <p class="about-car__text text white-text">
                             Модель S обладает лучшей в своем классе вместимостью: 
                             в машине поместится до пяти взрослых и двух детей. 
-                            Оснащена современным 17-дюймовым сенсорным экраном. 
+                            Оснащена современным </br> 17-дюймовым сенсорным экраном. 
                             Усовершенствованная шумовая инженерия создает динамику звука, 
                             сравнимую со студией звукозаписи, а стеклянная крыша 
                             обеспечивает просторный интерьер для каждого пассажира.
@@ -68,23 +76,23 @@
                     </div>
                     <div class="description__advantage-wrapper">
                         <div class="advantage description__advantage-item">
-                            <b class="advantage__figures">17</b>
-                            <b class="advantage__unit-of-measure">дюймов</b>
-                            <b class="advantage__about-subject">Большой дисплей</b>
+                            <b class="advantage__figures advantage__figures_type_screen white-text">17</b>
+                            <b class="advantage__unit-of-measure white-text">дюймов</b>
+                            <b class="advantage__subject white-text">Большой дисплей</b>
                         </div>
                         <div class="advantage description__advantage-item">
-                            <b class="advantage__unit-of-measure">Беспроводное обновление ПО</b>
-                            <b class="advantage__about-subject">Повышенная функциональность</b>
+                            <b class="advantage__unit-of-measure advantage__unit-of-measure_type_wifi white-text">Беспроводное обновление ПО</b>
+                            <b class="advantage__subject white-text">Повышенная функциональность</b>
                         </div>
                         <div class="advantage description__advantage-item">
-                            <b class="advantage__figures">894</b>
-                            <b class="advantage__unit-of-measure">литра</b>
-                            <b class="advantage__about-subject">Объем грузового пространства</b>
+                            <b class="advantage__figures advantage__figures_type_battery white-text">894</b>
+                            <b class="advantage__unit-of-measure white-text">литра</b>
+                            <b class="advantage__subject white-text">Объем грузового пространства</b>
                         </div>
                     </div>
                     <div class="order description__order">
-                        <a class="order__know-more">узнать больше</a>
-                        <button class="order__button order__button_color_white" type="button">заказать</button>
+                        <a class="order__know-more white-text">узнать больше</a>
+                        <button class="order__button order__button_color_white white-text" type="button">заказать</button>
                     </div>
                 </div>
             </section>
@@ -92,7 +100,7 @@
             <!-- Третий раздел- безопасность модели S -->
             
 
-            <section class="safety">
+            <!-- <section class="safety">
                 <div class="safety__main-wrapper">
                     <div class="about-safety safety__about-safety">
                         <h3 class="about-safety__title title">Самый безопасный автомобиль в мире</h3>
@@ -136,6 +144,6 @@
                 <b class="copyright__WebHero">WebHero</b>
                 <span class="copyright__school">School</span>
             </address>
-        </footer>
+        </footer> -->
     </body>
 </html>

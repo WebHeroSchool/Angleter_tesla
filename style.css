@@ -1,3 +1,816 @@
+/* Глобальные и общие стили */
+
 body {
-    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Стили хедера */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 60px 0 43px;
+    margin-top: 2px;
+}
+
+.header__logo {
+    margin-right: 80px;
+}
+
+.models-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.models-menu__item-wrapper {
+    position: relative;
+}
+
+.models-menu__item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: normal;
+    color: #000000;
+    margin-right: 44px;
+    cursor: pointer;
+}
+
+.item-link:hover,
+.item-link:active,
+.active {
+    color: #E51937;
+}
+
+.item-link:hover::after,
+.item-link:active::after,
+.active::after {
+    content: "";
+  
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    
+    width: 60px;
+    height: 2px;
+    
+    background-image: url("img/underline.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.users-menu {
+    padding-top: 16px;
+}
+
+.users-menu__item-wrapper {
+    position: relative;
+    display: inline;
+}
+
+.users-menu__item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: normal;
+    color: #000000;
+    margin-right: 25px;
+}
+
+.users-menu__menu-image {
+margin-top: 1px;
+}
+.button_burger {
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+}
+
+
+.users-menu__menu-burger_size_mobile,
+.users-menu__menu-burger_size_ipad {
+    display: none;
+}
+
+/* Первый раздел-знакомство с моделью Model S */
+
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 1;
+    color: #000000;
+    text-align: center;
+    margin-top: 68px;
+    margin-bottom: 0;
+}
+
+.intro__welcome-text {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 27px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: normal;
+    color: #000000;
+    letter-spacing: 0.5;
+}
+
+.intro__image-tesla-logo {
+    position: absolute;
+    top: 55px;
+    max-width: 100%;
+    width: 1514px;
+}
+
+.intro__image-car-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+    max-width: 968px;
+    margin: 0 auto 30px;
+    
+}
+
+.intro__image-car {
+    z-index: 1;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.intro__order-advantage-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 798px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px; 
+}
+
+/* Блок advantage */
+
+.intro__advantage-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    min-width: 315px;
+    padding-left: 55px;
+    /* Padding используется для создания места для псевдоэлемента */
+}
+
+.advantage {
+    position: relative;  
+}
+
+.advantage__figures {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1;
+    color: #000000;
+    margin-right: 2px;
+}
+
+.advantage__unit-of-measure {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.advantage__subject {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    /* line-height: 1.6; */
+    line-height: 15px;
+    color: #000000;
+}
+
+.advantage__figures_type_speed::before {
+    content: "";
+  
+    position: absolute;
+    top: 7px;
+    left: -60px;
+    
+    width: 46px;
+    height: 35px;
+    
+    background-image: url("img/Speed.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.advantage__figures_type_road::before {
+    content: "";
+  
+    position: absolute;
+    top: 3px;
+    left: -42px;
+    
+    width: 31px;
+    height: 50px;
+    
+    background-image: url("img/Road_icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+/* Блок order */
+
+.order {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 290px;
+    margin-bottom: 41px;
+    margin-top: 7px;
+}
+
+.order__test-drive {
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.order__test-drive::before {
+    content: "";
+  
+    position: absolute;
+    top: 8px;
+    left: -30px;
+    
+    width: 46px;
+    height: 35px;
+    
+    background-image: url("img/steering-wheel.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.order__button {
+    width: 160px;
+    height: 40px;
+
+    border: 2px solid #E51937;
+    box-sizing: border-box;
+
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #E51937;
+    background-color: #ffffff;
+}
+
+.next-section_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 37px;
+}
+
+@media only screen and (min-width: 810px) and (max-width: 1100px) {
+    
+    .header__logo {
+        margin: 0;
+    }
+
+    .users-menu__menu-burger_size_ipad {
+        display: inline-block;
+        width: 24px;
+        height: 15px;
+        margin-top: 14px;
+        margin-right: 10px;
+    }
+
+    .users-menu,
+    .models-menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 809px) {
+    
+    .container {
+        max-width: 768px;
+        min-width: 481px;
+    }
+
+    .header {
+        padding: 20px 30px 0px 16px;
+    }
+
+    .users-menu__menu-burger_size_ipad {
+        display: inline-block;
+        width: 24px;
+        height: 15px;
+        margin-top: 14px;
+        margin-right: 14px;
+    }
+
+    .users-menu,
+    .models-menu {
+        display: none;
+    }
+
+    .intro__title {
+        font-size: 90px;
+        margin-top: 90px;
+    }
+
+    .intro__welcome-text {
+        font-size: 15px;
+    }
+
+    .intro__image-tesla-logo {
+        position: absolute;
+        top: 190px;
+    }
+    .intro__image-car-wrapper {
+        margin-top: 95px;
+        margin-bottom: 40px;
+        max-width: 700px;
+    }
+
+    .intro__order-advantage-wrapper {
+        max-width: 440px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Блок advantage. tablet size */
+
+    .intro__advantage-wrapper {
+        min-width: 230px;
+        max-width: 390px;
+        margin-bottom: 65px;
+    }
+
+    .advantage__figures {
+        font-size: 50px;
+        margin-right: 2px;
+    }
+
+    .advantage__unit-of-measure {
+        font-size: 20px;
+    }
+
+    .advantage__subject {
+
+        font-size: 12px;
+    }
+
+    .advantage__figures_type_speed::before {
+        top: 10px;
+        left: -84px;  
+        width: 66px;
+        height: 60px;
+        background-size: 66px;
+    }
+
+    .advantage__figures_type_road::before {
+        top: 4px;
+        left: -55px;
+        width: 60px;
+        height: 100px;
+        background-size: 41px;
+    }
+
+        /* Блок order. tablet size */
+
+        .order {
+            max-width: 374px;
+            margin-left: 48px;
+            /* margin-left используется для создания места для псевдоэлемента */
+            margin-bottom: 58px;
+        }
+    
+        .order__test-drive {
+            color: #E51937;
+            font-size: 16px;
+    
+        }
+    
+        .order__test-drive::before {
+            top: 12px;
+            left: -50px;
+            background-image: url("img/steering-wheel-red.png");
+            background-size: 30px;
+        }
+    
+        .order__button {
+            color: #ffffff;
+            font-size: 16px;
+            background-color: #E51937;
+            padding-right: 11px;
+            width: 220px;
+            height: 55px;
+        }
+    
+}
+
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+    
+    .container {
+        max-width: 480px;
+        min-width: 376px;
+    }
+
+    .header {
+        padding: 20px 30px 0px 16px;
+    }
+
+    .users-menu__menu-burger_size_ipad {
+        display: inline-block;
+        width: 24px;
+        height: 15px;
+        margin-top: 14px;
+        margin-right: 14px;
+    }
+
+    .users-menu,
+    .models-menu {
+        display: none;
+    }
+
+    .intro__title {
+        font-size: 90px;
+        margin-top: 90px;
+    }
+
+    .intro__welcome-text {
+        font-size: 15px;
+    }
+
+    .intro__image-tesla-logo {
+        position: absolute;
+        top: 190px;
+    }
+    .intro__image-car-wrapper {
+        margin-top: 95px;
+        margin-bottom: 40px;
+        max-width: 700px;
+    }
+    .intro__order-advantage-wrapper {
+        width: 295px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Блок advantage. mobile size */
+
+    .intro__advantage-wrapper {
+        min-width: 220px;
+        max-width: 225px;
+        margin-bottom: 39px;
+    }
+
+    .advantage__figures {
+        font-size: 27px;
+        margin-right: 2px;
+    }
+
+    .advantage__unit-of-measure {
+        font-size: 15px;
+    }
+
+    .advantage__subject {
+        font-size: 10px;
+    }
+
+    .advantage__figures_type_speed::before {
+        top: 2px;
+        left: -50px;  
+        width: 38px;
+        height: 28px;
+        background-size: 38px;
+    }
+
+    .advantage__figures_type_road::before {
+        top: -3px;
+        left: -37px;
+        width: 26px;
+        height: 41px;
+        background-size: 26px;
+    }
+
+    /* Блок order. mobile size */
+
+    .order {
+
+        min-width: 100px;
+        max-width: 275px;
+        margin-left: 27px;
+        /* margin-left используется для создания места для псевдоэлемента */
+
+        margin-bottom: 33px;
+    }
+
+    .order__test-drive {
+        color: #E51937;
+    }
+
+    .order__test-drive::before {
+        top: 8px;
+        background-image: url("img/steering-wheel-red.png");
+    }
+
+    .order__button {
+        color: #ffffff;
+        background-color: #E51937;
+        padding-right: 11px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .container {
+        max-width: 375px;
+        min-width: 375px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px 0 2px;
+        margin-top: 0;
+    }
+
+    .logo {
+        width: 138px;
+    }
+
+    .users-menu__menu-burger_size_mobile {
+        display: inline-block;
+        width: 24px;
+        height: 15px;
+        margin-top: 14px;
+        margin-right: 28px;
+    }
+
+    .users-menu,
+    .models-menu {
+        display: none;
+    }
+
+    .intro__title {
+        font-size: 50px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .intro__welcome-text {
+        font-size: 10px;
+        margin-bottom: 49px;
+    }
+
+    .intro__image-tesla-logo {
+        position: absolute;
+        top: 105px;
+        left: -30px;
+        max-width: 430px;
+    }
+
+    .intro__image-car-wrapper {
+        min-width: 357px;
+        margin-bottom: 30px;
+    }
+
+    .intro__image-car {
+        width: 357px;
+        height: 166px;
+    }
+
+    .intro__order-advantage-wrapper {
+        width: 295px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Блок advantage. mobile size */
+
+    .intro__advantage-wrapper {
+        min-width: 220px;
+        max-width: 225px;
+        margin-bottom: 39px;
+    }
+
+    .advantage__figures {
+        font-size: 27px;
+        margin-right: 2px;
+    }
+
+    .advantage__unit-of-measure {
+        font-size: 15px;
+    }
+
+    .advantage__subject {
+        font-size: 10px;
+    }
+
+    .advantage__figures_type_speed::before {
+        top: 2px;
+        left: -50px;  
+        width: 38px;
+        height: 28px;
+        background-size: 38px;
+    }
+
+    .advantage__figures_type_road::before {
+        top: -3px;
+        left: -37px;
+        width: 26px;
+        height: 41px;
+        background-size: 26px;
+    }
+
+    /* Блок order. mobile size */
+
+    .order {
+
+        min-width: 100px;
+        max-width: 275px;
+        margin-left: 27px;
+        /* margin-left используется для создания места для псевдоэлемента */
+
+        margin-bottom: 33px;
+    }
+
+    .order__test-drive {
+        color: #E51937;
+    }
+
+    .order__test-drive::before {
+        top: 8px;
+        background-image: url("img/steering-wheel-red.png");
+    }
+
+    .order__button {
+        color: #ffffff;
+        background-color: #E51937;
+        padding-right: 11px;
+    }
+}
+
+/* Второй раздел- функциональное описание модели S  */
+
+.description {
+    position: relative;
+}
+.description__image-car {
+    position: absolute;
+}
+
+.description__title {
+    font-weight: 600;
+    font-size: 70px;
+    color: #E51937;
+}
+
+.description__main-wrapper {
+    position: absolute;
+    right: 0px;
+    width: 388px;
+    min-height: 849px;
+    background-color: #E51937;
+    padding-left: 52px;
+    padding-top: 51px;
+}
+
+.description__about-car {
+}
+
+.about-car__text {
+    width: 316px;
+    margin-bottom: 60px;
+}
+
+.text-title {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 11px;
+    margin-top: 0px;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.white-text {
+    color: #ffffff;
+    background-color: #E51937; 
+}
+
+.description__advantage-wrapper {
+width: 190px;
+min-height: 264px;
+margin-left: 55px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.advantage__figures_type_screen::before {
+    content: "";
+  
+    position: absolute;
+    top: 10px;
+    left: -55px;
+    
+    width:36px;
+    height: 53px;
+    
+    background-image: url("img/screen.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.advantage__unit-of-measure_type_wifi::before {
+    content: "";
+  
+    position: absolute;
+    top: 25px;
+    left: -60px;
+    
+    width:44px;
+    height: 34px;
+    
+    background-image: url("img/wifi.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.advantage__figures_type_battery::before {
+    content: "";
+  
+    position: absolute;
+    top: 7px;
+    left: -55px;
+    
+    width:36px;
+    height: 52px;
+    
+    background-image: url("img/battery.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.description__order {
+    position: absolute;
+    min-width: 320px;
+    bottom: 63px;
+    right: 44px;
+    margin: 0px;
+}
+
+.order__know-more {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.order__know-more::before {
+    content: "";
+  
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    
+    width:22px;
+    height: 22px;
+    
+    background-image: url("img/info.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.order__button_color_white {
+    border-color: #ffffff;
 }
