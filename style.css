@@ -51,12 +51,14 @@ a {
 }
 
 .item-link:hover,
-.item-link:active {
+.item-link:active,
+.active {
     color: #E51937;
 }
 
 .item-link:hover::after,
-.item-link:active::after {
+.item-link:active::after,
+.active::after {
     content: "";
   
     position: absolute;
