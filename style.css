@@ -313,7 +313,7 @@ margin-top: 1px;
 @media only screen and (min-width: 481px) and (max-width: 809px) {
     
     .container {
-        max-width: 768px;
+        max-width: 809px;
         min-width: 481px;
     }
 
@@ -820,19 +820,16 @@ justify-content: space-between;
     border-color: #ffffff;
 }
 
-@media only screen and (min-width: 376px) and (max-width: 768px) {
-    
-    .container {
-        max-width: 768px;
-        min-width: 376px;
-    }
+@media only screen and (min-width: 376px) and (max-width: 809px) {
+
     .description {
         width: 100%;
-        min-height: 500px;
-        background-size: 768px auto;
+        min-height: 550px;
+        background-image: url("img/tesla-model-s-cockpit-ipad.png");
+        background-size: 809px auto;
         background-repeat: no-repeat;
-        background-position-x: 20px;
-        background-position-y: 26px;
+        background-position-x: 0;
+        background-position-y: 23px;
     }
     .description__title {
         position: absolute;
@@ -845,11 +842,20 @@ justify-content: space-between;
         position: absolute;
         left: 0px;
         top: 525px;
-        max-width: 716px;
+        max-width: 809px;
         width: 100%;
-        min-height: 488px;
-        padding-left: 52px;
+        min-height: 437px;
+        padding-left: 0;
         padding-top: 51px;
+    }
+
+    .description__about-car {
+        margin-left: 34px;
+        margin-top: 5px;
+    }
+
+    .about-car__text {
+        margin-top: 25px;
     }
 
     .description__advantage-wrapper {
@@ -857,25 +863,36 @@ justify-content: space-between;
     top: 55px;
     right: 68px;
     width: 190px;
-    min-height: 264px;
-    /* max-height: 264px; */
+    min-height: 250px;
     margin-left: 55px;
     }
     
+    .advantage__figures_size_medium {
+    font-size: 35px;
+    line-height: 43px;
+    }
+
     .description__order {
-        /* position: absolute;
-        min-width: 459px;
-        bottom: 63px;
-        right: 44px;
-        margin: 0px; */
-        min-width: 459px;
-        margin: 0;
-        /* margin-left: 50px; */
+        position: relative;
+        bottom: 0;
+        right: 0;
+        min-width: 420px;
+        padding-left: 40px;
+        margin: 5px auto 0;
     }
     .order__know-more {
         font-size: 16px;
         line-height: 20px;
     }
+
+
+    .order__know-more::before {
+        background-size: 32px;
+        left: 0;
+        width: 32px;
+        height: 32px;
+    }
+
     .order__button {
         font-size: 16px;
         border: 3px solid #FFFFFF;
@@ -883,4 +900,12 @@ justify-content: space-between;
         width: 220px;
         height: 55px;
     }
+}
+
+@media only screen and (max-width: 375px) {
+
+    /* .container {
+        max-width: 375px;
+        min-width: 375px;
+    } */
 }
