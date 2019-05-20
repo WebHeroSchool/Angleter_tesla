@@ -820,7 +820,7 @@ justify-content: space-between;
     border-color: #ffffff;
 }
 
-@media only screen and (min-width: 376px) and (max-width: 809px) {
+@media only screen and (min-width: 680px) and (max-width: 809px) {
 
     .description {
         width: 100%;
@@ -831,6 +831,7 @@ justify-content: space-between;
         background-position-x: 0;
         background-position-y: 23px;
     }
+
     .description__title {
         position: absolute;
         margin: 0;
@@ -902,10 +903,87 @@ justify-content: space-between;
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 376px) and (max-width: 679px) {
 
-    /* .container {
-        max-width: 375px;
-        min-width: 375px;
-    } */
+    .description__advantage-wrapper {
+        display: none;
+    }
+
+    .description {
+        width: 100%;
+        min-height: 550px;
+        background-image: url("img/tesla-model-s-cockpit-ipad.png");
+        background-size: 809px auto;
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        background-position-y: 23px;
+    }
+    .description__title {
+        position: absolute;
+        margin: 0;
+        right: 50px;
+        top: 30px;
+    }
+    .description__main-wrapper {
+        position: absolute;
+        left: 0px;
+        top: 525px;
+        max-width: 809px;
+        width: 100%;
+        min-height: 437px;
+        padding-left: 0;
+        padding-top: 51px;
+    }
+
+    .description__about-car {
+        margin: 0 auto;
+        width: 316px;
+    }
+
+    .description__order {
+        position: relative;
+        min-width: 320px;
+        padding-left: 40px;
+        margin: 50px auto 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .order__know-more::before {
+        left: 10px;
+        top: 15px;
+
+    }
+}
+@media only screen and (max-width: 480px) {
+    .description__title,
+    .description__advantage-wrapper,
+    .description__order {
+        display: none;
+    }
+    .description {
+        width: 100%;
+        min-height: 300px;
+        background-image: url("img/tesla-model-s-cockpit-mobile.png");
+        background-size: 380px auto;
+        background-position-y: -35px;
+    }
+    .description__main-wrapper {
+        position: absolute;
+        left: 0px;
+        top: 285px;
+        max-width: 809px;
+        width: 100%;
+        min-height: 285px;
+        padding-left: 0;
+        padding-top: 25px;
+    }
+
+    .description__about-car {
+        margin: 0 auto;
+        width: 316px;
+    }
+    .about-car__text {
+        margin-bottom: 0;
+    }
 }
