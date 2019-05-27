@@ -1008,3 +1008,150 @@ justify-content: space-between;
         margin-bottom: 0;
     }
 }
+
+
+/* Третий раздел- безопасность  */
+
+.safety {
+    position: relative;
+    width: 100%;
+    min-height: 900px;
+    /* background-image: url("img/Model_S_watermark.png");
+    background-size: 800px auto;
+    background-repeat: no-repeat;
+    background-position-x: 635px;
+    background-position-y: 160px; */
+}
+
+.safety__main-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 388px;
+    min-height: 849px;
+    background-color: #E51937;
+    padding-left: 52px;
+    padding-top: 51px;
+    z-index: -1;
+}
+
+.about-safety__text {
+    width: 316px;
+    margin-bottom: 56px;
+}
+
+.raiting__list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 23px;
+    margin-bottom: 95px;
+}
+
+.raiting__item {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.raiting__item_type_aside-stand {
+    position: relative;
+}
+.raiting__item-sub {
+    position: absolute;
+    top: 15px;
+    left: 68px;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+.safety__whole-raiting {
+    position: relative;
+    margin-left: 95px;
+}
+
+.whole-raiting__title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 58px;
+}
+
+.whole-raiting__title::before {
+    content: "";
+  
+    position: absolute;
+    top: 5px;
+    left: -83px;
+    
+    width: 62px;
+    height: 74px;
+    
+    background-image: url("img/safety.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.whole-raiting__text {
+    display: block;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 20px;
+}
+
+.safety__car-frame {
+    padding-left: 345px;
+    padding-top: 220px;
+}
+
+.car-frame__watermark-wrapper {
+position: absolute;
+z-index: -1;
+
+left: 640px;
+right: 0px;
+top: 140px;
+max-width: 1000px; 
+/* width: 100%; */
+}
+
+.car-frame__watermark-image {
+    width: 100%;
+}
+
+.car-frame__image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1049px;
+    /* padding-left: 400px;
+    padding-top: 223px; */
+    /* top: 223px;
+    right: 45px; */
+}
+
+.car-frame__image {
+    width: 100%;
+}
+
+.car-frame__text {
+    position: absolute;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 15px;
+}
+
+.car-frame__text_type_front-blow::before {
+    content: "";
+  
+    position: absolute;
+    top: -100px;
+    left: 100px;
+    
+    width: 14px;
+    height: 281px;
+    
+    background-image: url("img/line_long.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
