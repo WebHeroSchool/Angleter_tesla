@@ -1041,6 +1041,7 @@ justify-content: space-between;
 }
 
 .raiting__list {
+    position: relative;
     list-style: none;
     padding-left: 0;
     margin-top: 23px;
@@ -1048,6 +1049,7 @@ justify-content: space-between;
 }
 
 .raiting__item {
+    position: relative;
     font-weight: bold;
     font-size: 17px;
     line-height: 36px;
@@ -1099,11 +1101,6 @@ justify-content: space-between;
     line-height: 20px;
 }
 
-.safety__car-frame {
-    padding-left: 345px;
-    padding-top: 220px;
-}
-
 .car-frame__watermark-wrapper {
 position: absolute;
 z-index: -1;
@@ -1119,39 +1116,81 @@ max-width: 1000px;
     width: 100%;
 }
 
+.safety__car-frame {
+    position: relative;
+    padding-left: 343px;
+    padding-top: 172px;
+}
 .car-frame__image-wrapper {
     position: relative;
     width: 100%;
     max-width: 1049px;
-    /* padding-left: 400px;
-    padding-top: 223px; */
-    /* top: 223px;
-    right: 45px; */
 }
 
 .car-frame__image {
     width: 100%;
 }
 
-.car-frame__text {
+/* .car-frame__text {
+    display: block;
     position: absolute;
     font-weight: 600;
     font-size: 17px;
     line-height: 15px;
+}
+.car-frame__text_type_front-blow {
+    top: 0%;
+    /* left: 280px; */
+    /* left: 26.85%;
 }
 
 .car-frame__text_type_front-blow::before {
     content: "";
   
     position: absolute;
-    top: -100px;
-    left: 100px;
+    top: 0px;
+    left: -17px; */
+    /* transform: rotate(180deg); */
     
-    width: 14px;
+    /* width: 14px;
     height: 281px;
     
     background-image: url("img/line_long.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+} */
 
+/* .car-frame__text_type_aside-blow {
+    top: -45px;
+    left: 53.3%;
+}
+
+.car-frame__text_type_aside-blow::before {
+    content: "";
+  
+    position: absolute;
+    top: 0px;
+    left: -17px;
+    
+    width: 14px;
+    height: 132px;
+    
+    background-image: url("img/line_short.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}  */
+
+.raiting__item::after {
+    content: "";
+  
+    position: absolute;
+    top: 3px;
+    left: 150px;
+    
+    width: 140px;
+    height: 25px;
+    
+    background-image: url("img/Star.png");
+    background-repeat: space;
+    background-position: 0 0;   
 }
