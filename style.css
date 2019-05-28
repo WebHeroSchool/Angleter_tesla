@@ -1055,9 +1055,26 @@ justify-content: space-between;
     line-height: 36px;
     text-transform: uppercase;
 }
+
+.raiting__item::after {
+    content: "";
+  
+    position: absolute;
+    top: 3px;
+    left: 150px;
+    
+    width: 140px;
+    height: 25px;
+    
+    background-image: url("img/Star.png");
+    background-repeat: space;
+    background-position: 0 0;   
+}
+
 .raiting__item_type_aside-stand {
     position: relative;
 }
+
 .raiting__item-sub {
     position: absolute;
     top: 15px;
@@ -1067,6 +1084,7 @@ justify-content: space-between;
     text-transform: uppercase;
     opacity: 0.7;
 }
+
 .safety__whole-raiting {
     position: relative;
     margin-left: 95px;
@@ -1131,66 +1149,17 @@ max-width: 1000px;
     width: 100%;
 }
 
-/* .car-frame__text {
-    display: block;
-    position: absolute;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 15px;
-}
-.car-frame__text_type_front-blow {
-    top: 0%;
-    /* left: 280px; */
-    /* left: 26.85%;
+.footer {
+    position: relative; 
 }
 
-.car-frame__text_type_front-blow::before {
-    content: "";
-  
+.footer__copyright {
     position: absolute;
-    top: 0px;
-    left: -17px; */
-    /* transform: rotate(180deg); */
-    
-    /* width: 14px;
-    height: 281px;
-    
-    background-image: url("img/line_long.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-} */
-
-/* .car-frame__text_type_aside-blow {
-    top: -45px;
-    left: 53.3%;
+    bottom: 5px;
+    right: 20px;
 }
 
-.car-frame__text_type_aside-blow::before {
-    content: "";
-  
-    position: absolute;
-    top: 0px;
-    left: -17px;
-    
-    width: 14px;
-    height: 132px;
-    
-    background-image: url("img/line_short.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}  */
-
-.raiting__item::after {
-    content: "";
-  
-    position: absolute;
-    top: 3px;
-    left: 150px;
-    
-    width: 140px;
-    height: 25px;
-    
-    background-image: url("img/Star.png");
-    background-repeat: space;
-    background-position: 0 0;   
+.footer__copyright-image {
+width: 93px;
 }
+
