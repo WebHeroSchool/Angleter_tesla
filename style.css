@@ -1180,7 +1180,7 @@ width: 93px;
         max-width: 809px;
         width: 100%;
         min-height: 437px;
-        padding-left: 34px;
+        padding-left: 0px;
         padding-top: 51px;
     }
 
@@ -1207,7 +1207,7 @@ width: 93px;
     .safety__raiting {
         position: absolute;
         top: 64px;
-        right: 120px;
+        right: 86px;
         /* width: 190px; */
         min-height: 263px 
     }
@@ -1217,10 +1217,12 @@ width: 93px;
         max-width: 316px;
         margin-top: 10px;
         margin-bottom: 0px;
+        margin-left: 34px;
     }
 
     .about-safety__text {
         margin-bottom: 90px;
+        margin-left: 34px;
     }
 
     .safety__whole-raiting {
