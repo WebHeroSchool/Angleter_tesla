@@ -287,7 +287,7 @@ margin-top: 1px;
 .next-section_wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 31px;
+    margin-bottom: 27px;
 }
 
 @media only screen and (min-width: 810px) and (max-width: 1100px) {
@@ -400,7 +400,7 @@ margin-top: 1px;
         /* Блок order. tablet size */
 
         .order {
-            max-width: 300px;
+            max-width: 380px;
             margin-left: 48px;
             /* margin-left используется для создания места для псевдоэлемента */
             margin-bottom: 58px;
@@ -713,6 +713,7 @@ margin-top: 1px;
 .about-car__text {
     width: 316px;
     margin-bottom: 60px;
+    margin-top: 10px;
 }
 
 .text-title {
@@ -789,7 +790,7 @@ justify-content: space-between;
 
 .description__order {
     position: absolute;
-    min-width: 300px;
+    min-width: 320px;
     bottom: 63px;
     right: 44px;
     margin: 0px;
@@ -897,10 +898,13 @@ justify-content: space-between;
 
     .order__button {
         font-size: 16px;
-        border: 3px solid #FFFFFF;
         padding-right: 11px;
         width: 220px;
         height: 55px;
+    }
+
+    .order__button_border_white {
+        border: 3px solid #FFFFFF;  
     }
 }
 
@@ -999,7 +1003,7 @@ justify-content: space-between;
         width: 100%;
         min-height: 285px;
         padding-left: 0;
-        padding-top: 25px;
+        padding-top: 22px;
     }
 
     .description__about-car {
@@ -1035,6 +1039,7 @@ justify-content: space-between;
 .about-safety__text {
     width: 316px;
     margin-bottom: 56px;
+    margin-top: 10px;
 }
 
 .raiting__list {
@@ -1234,7 +1239,13 @@ width: 93px;
         .footer__copyright {
             display: none;
         }
-        .description__order {
+
+        .safety__order {
+            left: 50%;
+            margin-left: -150px;
+            right: 50%;
+        }
+        /* .description__order {
             position: relative;
             bottom: 0;
             right: 0;
@@ -1261,11 +1272,19 @@ width: 93px;
             padding-right: 11px;
             width: 220px;
             height: 55px;
-        }
+        } */
 
     }
+    @media only screen and (min-width: 769px) and (max-width: 809px) {
+        .safety__order {
+            left: auto;
+            margin-left: auto;
+            right: auto;
+        }
+    }
 
-@media only screen and (min-width: 735px) and (max-width: 768px) {
+
+    @media only screen and (min-width: 735px) and (max-width: 768px) {
 /* @media only screen and (min-width: 720px) and (max-width: 809px) { */
     
     .safety {
@@ -1333,6 +1352,7 @@ width: 93px;
     .footer__copyright {
         display: none;
     }
+
 }
 
 @media only screen and (min-width: 376px) and (max-width: 734px) {
@@ -1350,7 +1370,7 @@ width: 93px;
         top: 560px;
         max-width: 809px;
         width: 100%;
-        min-height: 437px;
+        min-height: 400px;
         padding-left: 0px;
         padding-top: 51px;
     }
