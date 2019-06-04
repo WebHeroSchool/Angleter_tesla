@@ -400,7 +400,7 @@ margin-top: 1px;
         /* Блок order. tablet size */
 
         .order {
-            max-width: 380px;
+            max-width: 400px;
             margin-left: 48px;
             /* margin-left используется для создания места для псевдоэлемента */
             margin-bottom: 58px;
@@ -413,7 +413,7 @@ margin-top: 1px;
         }
     
         .order__test-drive::before {
-            top: 12px;
+            top: 8px;
             left: -50px;
             background-image: url("img/steering-wheel-red.png");
             background-size: 30px;
@@ -908,7 +908,7 @@ justify-content: space-between;
     }
 }
 
-@media only screen and (min-width: 376px) and (max-width: 679px) {
+@media only screen and (min-width: 500px) and (max-width: 679px) {
 
     .description__advantage-wrapper {
         display: none;
@@ -948,7 +948,7 @@ justify-content: space-between;
 
     .description__order {
         position: relative;
-        max-width: 310px;
+        /* max-width: 310px; */
         
         padding-left: 0;
         margin: 0 auto;
@@ -957,16 +957,21 @@ justify-content: space-between;
     }
 
     .order__know-more {
-    padding-left: 6px;
+        padding-left: 6px;
     }
-
+    .order__know-more_size_big {
+        font-size: 16px;
+    }
+    .order__know-more::before {
+        top: 14px;
+    }
     .order__button {
-        width: 160px;
-        height: 40px;
+        /* width: 160px; */
+        /* height: 40px; */
         /* border: 2px solid #E51937; */
         /* box-sizing: border-box; */
         /* font-weight: 700; */
-        font-size: 13px;
+        /* font-size: 13px; */
     }
     /* .order__know-more::before {
         background-size: 32px;
@@ -982,7 +987,7 @@ justify-content: space-between;
     
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 499px) {
     .description__title,
     .description__advantage-wrapper,
     .description__order {
@@ -992,7 +997,7 @@ justify-content: space-between;
         width: 100%;
         min-height: 300px;
         background-image: url("img/tesla-model-s-cockpit-mobile.png");
-        background-size: 380px auto;
+        background-size: 499px auto;
         background-position-y: -35px;
     }
     .description__main-wrapper {
@@ -1355,7 +1360,7 @@ width: 93px;
 
 }
 
-@media only screen and (min-width: 376px) and (max-width: 734px) {
+@media only screen and (min-width: 500px) and (max-width: 734px) {
     .description {
         margin-bottom: 487px;
     }
@@ -1409,7 +1414,7 @@ width: 93px;
         display: none;
     }
 }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 499px) {
         .description {
         margin-bottom: 294px;
         }
@@ -1435,12 +1440,12 @@ width: 93px;
     .safety__car-frame {
         position: relative;
         padding-left: 0px;
-        padding-top: 55px;
+        padding-top: 10px;
     }
     .car-frame__image-tablet {
         display: block;
         width: 100%;
-        max-width: 362px;
+        /* max-width: 362px; */
     }
     .car-frame__image {
         display: none; 
@@ -1462,5 +1467,9 @@ width: 93px;
     .footer__copyright {
         display: none;
     }
-
+}
+    @media only screen and (max-width: 375px) {
+        .safety__car-frame {
+            padding-top: 55px;
+        }
 }
