@@ -723,13 +723,13 @@ margin-top: 1px;
     margin-top: 0px;
 }
 
-.text {
+.text-block {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
 }
 
-.white-text {
+.primary-colour-text {
     color: #ffffff;
     background-color: #E51937; 
 }
