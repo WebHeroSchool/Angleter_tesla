@@ -970,14 +970,14 @@ justify-content: space-between;
     .description {
         width: 100%;
         min-height: 300px;
-        background-image: url("img/tesla-model-s-cockpit-mobile.png");
-        background-size: 499px auto;
+        background-image: url("img/tesla-model-s-cockpit-ipad.png");
+        background-position-x: -30px;
         background-position-y: -35px;
     }
     .description__main-wrapper {
         position: absolute;
         left: 0px;
-        top: 285px;
+        top: 275px;
         max-width: 809px;
         width: 100%;
         min-height: 285px;
@@ -994,6 +994,17 @@ justify-content: space-between;
     }
 }
 
+@media only screen and (min-width: 450px) and (max-width: 499px) {
+    .description {
+        background-size: 530px auto;
+    }
+}
+
+@media only screen and (max-width: 449px) {
+    .description {
+        background-size: 480px auto;
+    }
+}
 
 /* Третий раздел- безопасность  */
 
